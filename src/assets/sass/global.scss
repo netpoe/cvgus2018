@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/mixins";
+@import "./bootstrap-variables";
+@import "./variables";
+
+// EBM variables
+@import "./ebm-variables";
+@import "ebm/functions/ebm-functions";
+@import "ebm/helpers/ebm-helpers";
+@import "./font-mixins";
+
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/print";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/input-group";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/utilities";
+
+@import "./font-classes";
+@import "./bootstrap-overrides";
+@import "./icons";
+@import "ebm/control/ebm-container-control";
+@import "ebm/modules/ebm-header";
+
+html {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.site-wrapper {
+  padding-bottom: $header-height;
+  padding-top: $header-height;
+  background-color: white;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}

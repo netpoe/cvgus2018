@@ -1,0 +1,111 @@
+@import "sass/styles.scss";
+
+.block {
+  border-top: 3px solid $black;
+  padding: get-spacer(4) 0;
+}
+
+.subtitle {
+  &.separator {
+    &:before {
+      margin-bottom: get-spacer(4);
+      background: $black;
+      display: block;
+      content: '';
+      width: 28px;
+      height: 3px;
+      @include media-breakpoint-down(sm) {
+        background: transparent;
+        height: 0;
+      }
+    }
+  }
+}
+
+#experience {
+  h4 {
+    color: $gray-700;
+  }
+}
+
+#highlights {
+  h4 {
+    color: $gray-700;
+  }
+}
+
+#projects {
+  .project {
+    margin-bottom: get-spacer(4);
+    p, a {
+      @include serif-book;
+    }
+  }
+}
+
+#intro {
+  .left {
+    @include flex-column;
+  }
+  .title {
+    @include serif-bold;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 49px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: get-spacer(4);
+      line-height: 27px;
+      font-size: 42px;
+    }
+    span {
+      position: relative;
+      display: block;
+      &.green {
+        color: $green;
+        z-index: 10;
+      }
+      &.white {
+        text-shadow: 0 0 1px $gray-500;
+        color: white;
+      }
+      &.red {
+        color: $red;
+        z-index: 10;
+      }
+    }
+  }
+  .claim {
+    padding-bottom: get-spacer(5);
+    margin-top: auto;
+    color: $gray-700;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: get-spacer(3);
+      padding-bottom: 0;
+    }
+  }
+  .details {
+    @include normalize-text;
+    p {
+      @include bold;
+      color: $gray-700;
+    }
+  }
+  .networks {
+    @include flex-row;
+    font-size: $h5-font-size;
+    margin-top: auto;
+    p, a {
+      margin-right: get-spacer(3);
+    }
+    @include media-breakpoint-down(sm) {
+      display: block;
+      .email {
+        display: block;
+      }
+    }
+  }
+  .block {
+    @include flex-column;
+    min-height: 45vh;
+  }
+}
