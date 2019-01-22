@@ -44,3 +44,49 @@ html {
   position: relative;
   min-height: 100vh;
 }
+
+.block {
+  border-top: 3px solid $black;
+  padding: get-spacer(4) 0;
+  &.no-border {
+    border: none;
+  }
+}
+
+.subtitle {
+  &.separator {
+    &:before {
+      margin-bottom: get-spacer(4);
+      background: $black;
+      display: block;
+      content: '';
+      width: 28px;
+      height: 3px;
+      @include media-breakpoint-down(sm) {
+        background: transparent;
+        height: 0;
+      }
+    }
+  }
+}
+
+.project {
+  margin-bottom: get-spacer(4);
+  p, a {
+    @include serif-book;
+  }
+}
+
+.normalize-text {
+  @include normalize-text;
+}
+
+ul, ol {
+  li {
+    margin-bottom: get-spacer(2);
+  }
+}
+
+app-networks {
+  margin-top: auto;
+}

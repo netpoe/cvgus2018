@@ -27,3 +27,11 @@ input[type="submit"].btn,
     color: white;
   }
 }
+
+.table {
+  tbody {
+    td {
+      @include serif-book;
+    }
+  }
+}

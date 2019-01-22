@@ -10,3 +10,22 @@
 @import "ebm/functions/ebm-functions";
 @import "ebm/helpers/ebm-helpers";
 @import "./font-mixins";
+
+@mixin highlight-color {
+  color: $gray-700;
+}
+
+@mixin networks {
+  @include flex-row;
+  font-size: $h5-font-size;
+  margin-top: auto;
+  p, a {
+    margin-right: get-spacer(3);
+  }
+  @include media-breakpoint-down(sm) {
+    display: block;
+    .email {
+      display: block;
+    }
+  }
+}

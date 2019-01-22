@@ -1,0 +1,54 @@
+@import "sass/styles.scss";
+
+#intro {
+  .left {
+    @include flex-column;
+  }
+  .title {
+    @include alt;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-size: 49px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: get-spacer(4);
+      line-height: 34px;
+      font-size: 42px;
+    }
+    span {
+      position: relative;
+      display: block;
+      &.green {
+        color: $green;
+        z-index: 10;
+      }
+      &.white {
+        text-shadow: 0 0 1px $gray-600;
+        color: white;
+      }
+      &.red {
+        color: $red;
+        z-index: 10;
+      }
+    }
+  }
+  .claim {
+    padding-bottom: get-spacer(5);
+    margin-top: auto;
+    color: $gray-700;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: get-spacer(3);
+      padding-bottom: 0;
+    }
+  }
+  .details {
+    @include normalize-text;
+    p {
+      @include serif-book;
+      color: $gray-700;
+    }
+  }
+  .block {
+    @include flex-column;
+    min-height: 45vh;
+  }
+}

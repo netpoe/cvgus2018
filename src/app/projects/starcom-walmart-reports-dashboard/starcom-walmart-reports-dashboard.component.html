@@ -1,0 +1,227 @@
+<main id="home" class="site-wrapper">
+  <section id="intro" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 left"></div>
+        <div class="col-sm-8">
+          <section class="block no-border">
+            <h3 class="name">{{ project.name }}<br> <small>Dashboard de Reportes para Walmart</small></h3>
+            <article class="details">
+              <p>Cliente: {{ project.name }}</p>
+              <p>Edif. Europlaza torre 2, piso 8. Zona 14, Guatemala</p>
+              <p>Última actualización: Enero 22, 2019</p>
+            </article>
+            <article class="networks">
+              <nav>
+                <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="descripcion">Descripción</a>
+                <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="propuesta">Propuesta</a>
+                <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="terminos-y-condiciones">Términos y condiciones</a>
+                <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="preguntas-frecuentes">Preguntas frecuentes</a>
+              </nav>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="descripcion" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="subtitle separator">Descripción</h2>
+        </div>
+        <div class="col-sm-8">
+          <section class="block">
+            <h4>{{ project.name }} quiere proveer a sus clientes una mejor forma de visualizar los datos previamente recolectados y analizados por el equipo de marketing analysis.</h4>
+            <h4>Actualmente la compañía presta este servicio utilizando Power Point de Microsoft, pero busca aumentar su competitividad explorando alternativas que:</h4>
+            <h5>a) Faciliten al cliente la lectura de los datos</h5>
+            <h5>b) El cliente pueda acceder a los reportes de manera online, offline, en PDF y en el navegador</h5>
+            <h5>c) Que {{ project.name }} pueda compartir fácilmente estos reportes y que pueda enterarse sobre la recepción y apertura de los reportes por parte de los clientes</h5>
+            <h5>d) Que el equipo de {{ project.name }} pueda construir dichos reportes de manera ágil y con acceso a herramientas más modernas de visualización y construcción de gráficos; eg. tablas, diagramas, pie charts, etc.</h5>
+            <h5>e) Que el equipo de {{ project.name }} pueda importar datos en formato CSV o XLS para ser consumido por dicha plataforma</h5>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="propuesta" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="subtitle separator">Propuesta</h2>
+        </div>
+        <div class="col-sm-8">
+          <section class="block">
+            <article class="project">
+              <h4>Capacitación de Infogram</h4>
+              <p><a href="https://infogram.com/" target="_blank">Infogram</a> es una herramienta de última generación que permite al usuario crear presentaciones e infográficos modernos, con acceso online y offline.</p>
+              <p>Como proveedor sugiero que {{ project.name }} utilice estas herramientas en vez de desarrollar su propia tecnología.</p>
+              <p>De modo que el equipo de {{ project.name }} aprenda a aprovechar las ventajas de la plataforma, ofrezco a {{ project.name }} el <strong>servicio de capacitación de Infogram</strong>.</p>
+              <p>Al terminar el programa el equipo de {{ project.name }} será capaz de:</p>
+              <ul>
+                <li>Crear presentaciones modernas con gráficos de última generación</li>
+                <li>Importar datos en formato CSV y XLS y presentarlos en gráficos de tipo:</li>
+              </ul>
+              <div class="row mb-3">
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-pie.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-column.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-axes.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-bar.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-scatter.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-line.png" alt="chart" class="img-responsive"></div>
+                <div class="col-sm-4"><img src="assets/projects/starcom/chart-type-hierarchy.png" alt="chart" class="img-responsive"></div>
+              </div>
+              <ul>
+                <li>Crear infográficos interactivos con capacidad de <em>drilling</em><br><a href="https://infogram.com/solar-system-infographic-scroll-1hmr6g9l0j5o4nl?live" target="_blank" class="btn btn-outline-green">Ver ejemplo</a></li>
+              </ul>
+            </article>
+            <div class="card normalize-text">
+              <h4 class="card-header">Presupuesto</h4>
+              <div class="card-body">
+                <h1 class="budget"><small>$</small>640.00<sup>USD</sup></h1>
+              </div>
+              <div class="card-footer">
+                <p>Por persona. Ver <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="terminos-y-condiciones">términos y condiciones</a>.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="terminos-y-condiciones" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="subtitle separator">Términos<br>y condiciones</h2>
+        </div>
+        <div class="col-sm-8">
+          <section class="block">
+            <article class="project">
+              <h4 id="duracion">Duración del programa</h4>
+              <p>El programa está estructurado en 4 sesiones de 1 hora y 30 minutos distribuidas en 2 semanas. {{ project.name }} tiene la libertad de elegir los días y las horas de dichas sesiones. Los términos de este contrato iniciarán una vez se haga el depósito correspondiente al presupuesto establecido y una vez se determinen las fechas de la sesiones según la siguiente tabla:</p>
+              <div class="table-fluid">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Fecha</th>
+                      <th>Concepto</th>
+                      <th>Duración</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Día 1</td>
+                      <td>
+                        Manejo del dashboard de proyectos
+                        <ul>
+                          <li>Vista general de las plantillas</li>
+                          <li>Manejo de fólders</li>
+                          <li>Manejo de equipos</li>
+                        </ul>
+                      </td>
+                      <td>1:30h</td>
+                    </tr>
+                    <tr>
+                      <td>Día 2</td>
+                      <td>
+                        Edición de plantillas
+                        <ul>
+                          <li>Control del layout</li>
+                          <li>Preferencias del proyecto</li>
+                          <li>Edición de elementos de texto</li>
+                          <li>Edición de tipos de gráficos</li>
+                          <li>Inserción de mapas</li>
+                          <li>Inserción de imágenes</li>
+                          <li>Inserción de formas</li>
+                          <li>Integraciones</li>
+                        </ul>
+                      </td>
+                      <td>1:30h</td>
+                    </tr>
+                    <tr>
+                      <td>Día 3</td>
+                      <td>
+                        Creación de un proyecto real <br>
+                        El equipo implementara lo aprendido utilizando información de un proyecto real.
+                        <ul>
+                          <li>Exportar y compartir el proyecto</li>
+                          <li>Análisis de actividad en el proyecto</li>
+                        </ul>
+                      </td>
+                      <td>1:30h</td>
+                    </tr>
+                    <tr>
+                      <td>Día 4</td>
+                      <td>Resolución de preguntas y casos concretos</td>
+                      <td>1:30h</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h4>Formas de pago</h4>
+              <p>Anticipo del 100% del precio por persona.</p>
+              <p>Depósito o transferencia en cuenta bancaria BAM</p>
+              <p>Cheque</p>
+              <p>Bitcoin o Ethereum</p>
+              <h4>Producto final</h4>
+              <p>Al finalizar, los participantes habrán terminado una infografía con datos reales previamente recolectados y procesados por el equipo de {{ project.name }}</p>
+              <h4>Material del curso</h4>
+              <p>Acceso individual a la plataforma de Infogram. Cada participante deberá contar con un correo electrónico para recibir la confirmación de acceso.</p>
+              <p>Los participantes deberán contrar con datos en formatos CSV o XLS para ser utilizados durante la capacitación.</p>
+              <h4>Suscripción a los servicios sugeridos</h4>
+              <p>Infogram es un servicio en línea independiente. Gustavo Ibarra (el proveedor), no mantiene la plataforma de Infogram ni tiene una relación comercial con la misma. El servicio de Gustavo Ibarra se limita únicamente a la capacitación para el uso de la herramienta Infogram.</p>
+              <p>Los costos por utilizar las herramientas de Infogram son adicionales a este programa de capacitación y pueden consultarse en el apartado de "Team": <a href="https://infogram.com/pricing" target="_blank" class="btn btn-sm btn-outline-green">Ver costos adicionales</a></p>
+              <p>Los costos adicionales al programa de capacitación deberán pagarse directamente a Infogram.</p>
+              <h4>Terminación del contrato</h4>
+              <p>El contrato de este proyecto se verá finalizado una vez se cumplan las 4 sesiones establecidas en <a [routerLink]="['/projects/starcom/walmart-reports-dashboard']" fragment="duracion">el calendario anterior</a>.</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="preguntas-frecuentes" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="subtitle separator">Preguntas<br>frecuentes</h2>
+        </div>
+        <div class="col-sm-8">
+          <section class="block">
+            <article class="project">
+              <h4>¿Por qué utilizar Infogram sobre otras herramientas del mercado?</h4>
+              <p>Tras un análisis de las características de otros productos: WPS Office, Libre Office, Canva e iCloud Keynote y Prezi; pude determinar que Infogram cumple con las características descritas anteriormente.</p>
+              <p>Ventajas del programa de capacitación en comparación con el desarrollo de una herramienta "in house":</p>
+              <ul>
+                <li>{{ project.name }} no debe dar seguimiento al mantenimiento de la plataforma</li>
+                <li>{{ project.name }} no se responsabiliza por errores del software</li>
+                <li>Infogram provee soporte técnico directo 24/7</li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 left">
+          <img src="assets/img/profile-gus.jpg" alt="Developer Mexicano" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-sm-8 right">
+          <div class="block">
+            <h4>Gustavo Ibarra <br><small><a [routerLink]="['/home']">Developer Mexicano</a></small></h4>
+            <h5 class="claim mb-4">dApp Developer, Music Composer, Husband &amp; Digital Nomad</h5>
+            <p>During 2018 I built <a href="https://simpleico.com/" target="_blank" rel="nofollow">simpleico.com</a>, <a href="https://blockchainassetregistry.com/contract/0x646778A8766e990e85e7E3e55842A7aC7b46Ba48/details/serial-asset" target="_blank" rel="nofollow">blockchainassetregistry.com</a> and <a href="https://superander.com" target="_blank" rel="nofollow">superander.com</a>, which are fully decentralized web applications (dApps).</p>
+            <p>I organized the 1st <a href="https://www.youtube.com/watch?v=t3NXyiONCe4" target="_blank" rel="nofollow">Blockchain Developers Hackaton</a> in Central America.</p>
+            <p>I collaborated in the development of <a href="https://www.canwork.io/" target="_blank" rel="nofollow">canya.com</a> dApps, smart contracts and serverless Golang services.</p>
+          </div>
+          <app-networks></app-networks>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
