@@ -7,6 +7,9 @@
   padding: get-spacer(5) 0;
   .left, .right {
     min-height: 50vh;
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
   }
 }
 
